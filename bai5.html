@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+    let length = +prompt("Nhập vào số phần tử mong muốn của mảng!");
+    let arr = new Array(length);
+    for (let i=0; i<arr.length; i++) {
+        arr[i] = +prompt("Nhập vào đây giá trị  thứ " +(i+1)+ " của mảng.")
+    }
+    document.write("Mảng nhập vào đầu tiên là: " + arr);
+    document.write("<br>" + "<hr>" +"<br>");
+    let sum = 0;
+    let value;
+    for (value of arr) {
+        if (value<0) {
+            sum++
+            document.write(value + "<br>")
+        }
+    }
+    document.write("Số lượng phần tử nguyên âm là: " + sum);
+</script>
+</body>
+</html>

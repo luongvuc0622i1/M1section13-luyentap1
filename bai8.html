@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i=0; i<10; i++) {
+        arr[i] = +prompt("Nhập vào đây giá trị  thứ " +(i+1)+ " của mảng.")
+    }
+    document.write("Mảng nhập vào đầu tiên là: " + arr);
+    document.write("<br>" + "<br>" + "<hr>" + "<br>");
+    for (let i=0; i< arr.length; i++) {
+        for (let j=0; j<= arr.length; j++) {
+            let x
+            if (arr[i] < arr[j]) {
+                x = arr[i];
+                arr[i] = arr[j];
+                arr[j] = x;
+            }
+        }
+    }
+    document.write("Mảng sau khi sắp xếp lại (giảm dần): " + arr);
+</script>
+</body>
+</html>

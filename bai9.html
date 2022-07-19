@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+</head>
+<body>
+<script>
+    let arr1 = [];
+    for (let i=0; i<10; i++) {
+        arr1[i] = +prompt("Nhập vào đây giá trị  thứ " +(i+1)+ " của mảng.")
+    }
+    document.write("Mảng a nhập vào là: " + arr1 + "<br>");
+    let arr2 = [];
+    for (let i=0; i<10; i++) {
+        arr2[i] = +prompt("Nhập vào đây giá trị  thứ " +(i+1)+ " của mảng.")
+    }
+    document.write("Mảng b nhập vào là: " + arr2);
+
+
+    document.write("<br>" + "<br>" + "<hr>" + "<br>");
+
+
+    let arr3 = [];
+    let value;
+    for (value of arr1) {
+        arr3.push(value);
+    }
+    for (value of arr2) {
+        arr3.push(value);
+    }
+    document.write("Mảng c là: " + arr3);
+</script>
+</body>
+</html>
